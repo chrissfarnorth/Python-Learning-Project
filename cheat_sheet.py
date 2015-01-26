@@ -172,6 +172,22 @@ def uniquify(seq, idfun=None):
         result.append(item)
     return result
 
+def uniquify2(seq):
+    # Alternative to uniquify a list of objects
+    #
+    # Input
+    #           + A list of objects (seq)
+    # Output 
+    #           + A list of unique elements in seq 
+    #             (order preserved).
+    #
+    all_unique_items = []
+    for index, item in enumerate(seq):
+        if item not in all_unique_items:
+            all_unique_items.append( item )
+    return all_unique_items 
+
+
 #
 # chapter FILES, DIRECTORIES & PATHS
 
